@@ -25,7 +25,7 @@
   text-align: center;
   color: white;
   position: relative;
-  left: -60px;
+  left: 0px;
 }
 
 .navi {
@@ -77,6 +77,10 @@ iframe {
 
 .platforms li {
   list-style: none;
+  padding: 2px;
+}
+.platforms li > img {
+  list-style: none;
   background: white;
   padding: 10px;
   border-radius: 10px;
@@ -84,4 +88,24 @@ iframe {
 }
 .icon {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .landingMainText {
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #chatBox {
+    height: 70vh;
+    width: 30%;
+    margin-left: auto;
+    left: 10px;
+    bottom: 10px;
+  }
 }
