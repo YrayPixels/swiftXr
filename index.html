@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>SwiftXr Demo</title>
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- <div class="hostDiv"> -->
+    <div class="" style="overflow-x: hidden; position: relative">
+      <div class="navi w-100 mt-5">
+        <div class="col-10 border rounded-3 p-3 px-5 m-auto">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="logoText">The-hive</div>
+            <div class="d-flex">
+              <div>
+                <a href="#" class="nav-link me-3 text-white">Join the hive</a>
+              </div>
+
+              <div>
+                <a href="#" class="nav-link text-white">About us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          background: black;
+          height: 100vh;
+          position: relative;
+          overflow: hidden;
+        "
+      >
+        <div class="" style="height: 100vh">
+          <iframe
+            id="swiftFrame"
+            title="HackProject"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="fullscreen; autoplay; xr-spatial-tracking; midi; encrypted-media"
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            width="100%"
+            height="100%"
+            src="https://birdy-bg.swiftxr.app"
+          >
+          </iframe>
+          <div id="overlayDiv" class="px-5 col-12 text-center pt-5">
+            <h2 id="mainLandingText" class="landingMainText mt-5">
+              THE QUEEN CALLS
+            </h2>
+            <div>
+              <a href="#" class="btn btn-lg rounded-3 border text-white"
+                >Join the HIVE</a
+              >
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="" style="background: black">
+      <div class="text-center text-white py-5">
+        <h2>About the Hive</h2>
+        <hr />
+      </div>
+      <div
+        style="
+          height: 100vh;
+          background: black;
+          position: relative;
+          overflow: hidden;
+        "
+        class="py-5 row text-white"
+      >
+        <div style="width: 100%; height: 100%">
+          <iframe
+            id="galaxyFrame"
+            title="secondImage"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="fullscreen; autoplay; xr-spatial-tracking; camera; midi; encrypted-media"
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            width="100%"
+            height="100%"
+            src="https://galaxy.swiftxr.app"
+          >
+          </iframe>
+        </div>
+        <div class="aboutpage">
+          <div class="col-12 text-center px-5 text-white">
+            <h2 class="text-white display-4">
+              The-Hive is a group of intellectuals that work with the bee social
+              principle of specificty and unity, each has their role to play and
+              work tirelessy to achieve it.
+            </h2>
+            <hr />
+          </div>
+          <div class="scroll-x">
+            <ul
+              class="platforms d-flex justify-content-center align-items-center g-2"
+            >
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/icon-discord.svg"
+                  alt="https://discord.gg/fR9CS8mcHn"
+                />
+              </li>
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/icon-telegram.svg"
+                  alt="https://t.me/chirpley"
+                />
+              </li>
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/twitter-1.svg"
+                  alt="https://twitter.com/chirpley"
+                />
+              </li>
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/icon-youtube.svg"
+                  alt="https://www.youtube.com/channel/UCAToyfkEWZ6NosMJSjW8C8Q"
+                />
+              </li>
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/icon-tiktok.svg"
+                  alt="https://www.tiktok.com/@chirpley?"
+                />
+              </li>
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/icon-instagram.svg"
+                  alt="https://www.instagram.com/chirpley/"
+                />
+              </li>
+              <li class="f-center item">
+                <img
+                  class="icon"
+                  src="https://chirpley.ai/library/media/icon-redit.svg"
+                  alt="https://www.reddit.com/user/me/"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3">
+      <div class="col-10 m-auto">
+        <h2 class="text-center">The-Hive</h2>
+        <p class="text-center">Copyright 2024</p>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.getElementById("mainLandingText");
+        const textContent = textElement.textContent;
+        textElement.textContent = "";
+
+        function typeWriterEffect(index) {
+          if (index < textContent.length) {
+            textElement.textContent += textContent.charAt(index);
+            index++;
+            setTimeout(function () {
+              typeWriterEffect(index);
+            }, 100); // Adjust the speed (in milliseconds) between characters
+          }
+        }
+
+        typeWriterEffect(0);
+      });
+      const movingDiv = document.getElementById("movingDiv");
+      const hiveScroller = document.getElementById("swiftFrame");
+      const galaxyFrame = document.getElementById("galaxyFrame");
+      const body = document.body;
+
+      body.addEventListener("mousemove", function (event) {
+        const centerX = window.innerWidth / 2;
+        const mouseXFromCenter = event.clientX - centerX;
+        // Adjust the rotation factor as needed
+        const rotationFactor = 0.1;
+        hiveScroller.style.transform = `rotate(${
+          -mouseXFromCenter * rotationFactor
+        }deg)`;
+      });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            const scrollPosition = window.scrollY;
+            const scaleValue = 1 + scrollPosition * 0.001;
+            galaxyFrame.style.transform = `scale(${scaleValue})`;
+          }
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(galaxyFrame);
+
+      let prevScrollPosition = 0;
+
+      window.onscroll = function () {
+        const scrollPosition = window.scrollY;
+
+        // Check the scroll direction
+        if (scrollPosition > prevScrollPosition) {
+          // Scrolling down, apply scaling
+          const scaleValue = 1 + scrollPosition * 0.001;
+          galaxyFrame.style.transform = `scale(${scaleValue})`;
+        } else {
+          // Scrolling up, shrink
+          const scaleValue = 1 + scrollPosition * -0.1;
+          galaxyFrame.style.transform = `scale(${scaleValue})`;
+        }
+
+        // Update the previous scroll position
+        prevScrollPosition = scrollPosition;
+
+        // Scale the hiveScroller element based on scroll position
+        const scaleValue = 1 + scrollPosition * 0.01; // Adjust the scaling factor as needed
+        hiveScroller.style.transform = `scale(${scaleValue})`;
+      };
+    </script>
+  </body>
+</html>

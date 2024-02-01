@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "tursk";
+  src: url("/tusker-grotesk-font/TuskerGrotesk-3600Semibold.otf")
+    format("opentype");
+  /* You can also provide additional font properties here, such as font-weight and font-style */
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "tursk", sans-serif;
+}
+.hostDiv {
+  position: relative;
+  /* background-color: black; */
+}
+.logoText {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  /* font-weight: bolder; */
+}
+.landingMainText {
+  font-size: 250px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: -60px;
+}
+
+.navi {
+  position: absolute;
+  z-index: 99999;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+.aboutpage {
+  position: absolute;
+  z-index: 99999;
+  -webkit-text-stroke: 1px #000000;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: rgb(0, 0, 0); */
+}
+
+#overlayDiv {
+  position: absolute;
+  background: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 0.3s ease;
+  /* transform: translate(-50%, -50%); */
+  z-index: 999999999;
+}
+#galaxyFrame {
+  z-index: 1;
+  position: relative;
+  height: 100% !important;
+  transition: all 2s ease-in-out;
+}
+#swiftFrame {
+  z-index: 1;
+  position: relative;
+  height: 100% !important;
+  animation: increaseFrameScale 2s ease-in-out infinite;
+}
+
+iframe {
+  /* height: 100% !important; */
+  animation: increaseFrameScale 2s ease-in-out infinite;
+}
+
+.platforms li {
+  list-style: none;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  /* margin: 2px; */
+}
+.icon {
+  color: white;
+}
